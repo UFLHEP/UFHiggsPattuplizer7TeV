@@ -1,0 +1,3 @@
+/ZGToTauTauG_TuneZ2_7TeV-madgraph-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM
+/ZGToMuMuG_TuneZ2_7TeV-madgraph/Fall11-PU_S6_START42_V14B-v1/AODSIM
+/ZGToEEG_TuneZ2_7TeV-madgraph/Fall11-PU_S6_START42_V14B-v1/AODSIM

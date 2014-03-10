@@ -1,0 +1,25 @@
+CMSSW_4_4_5    GeneratorInterface/GenFilters                    
+V04-01-03      RecoLuminosity/LumiDB                            
+V00-02-10      UserCode/CMG/CMGTools/External CMGTools/External                                
+V00-03-05-10   CommonTools/ParticleFlow                         
+V06-23-01      CondFormats/DataRecord                           
+V01-02-13      CondFormats/EcalObjects                          
+V00-04-00      CondFormats/EgammaObjects                        
+V02-05-11      DataFormats/CaloRecHit                           
+V06-04-39      DataFormats/PatCandidates                        
+U09-01-05-01   DataFormats/MuonReco                             
+V00-00-05-44X  EgammaAnalysis/ElectronTools                     
+V00-00-70      FWCore/GuiBrowsers                               
+V08-07-52      PhysicsTools/PatAlgos                            
+V03-09-18-03   PhysicsTools/PatUtils                            
+V05-08-24      RecoEcal/EgammaCoreTools                         
+V08-11-10-02   RecoEgamma/EgammaTools 
+V00-03-32      RecoEgamma/ElectronIdentification                
+V02-04-17      RecoJets/Configuration                           
+V04-01-00      RecoJets/JetAlgorithms                           
+V05-05-03      RecoJets/JetProducers   
+muscle_v4_2_0 UserCode/scasasso/MuScleFit/Calibration MuScleFit/Calibration
+CMSSW_4_4_X-B01 UserCode/UFL/PAT/UFHZZSkim UFHZZSkim
+
+
+#in DF/MuonReco you must change "isPFMuon()" to "userInt("pfMuId")"
