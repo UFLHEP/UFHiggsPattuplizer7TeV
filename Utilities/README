@@ -17,7 +17,7 @@ Below is an example of how to get started
 $ cmsrel CMSSW_4_4_5
 $ cd CMSSW_4_4_5/src
 $ cmsenv
-$ git clone git@github.com:msnowball/UFHiggsPattuplizer7TeV.git UFHiggsPattuplizer7TeV
+$ git clone git@github.com:UFLHEP/UFHiggsPattuplizer7TeV.git UFHiggsPattuplizer7TeV
 $ cp -r UFHiggsPattuplizer7TeV/Utilities/* ./
 $ python installPackages.py
 $ scram b -j12
@@ -28,7 +28,7 @@ $ scram b -j12
 -The code is mostly automated using scripts. To start a new pat tuple of a dataset, simply create a text file containing the datasets you want 
  pattuplized in the same way (for example if they are all signal MC or all 2012A data). For this example I'll use 2012A data:
 
-1. Create a text file called DATA_2012A.txt containing these lines
+1. Create a text file called DATA_Jan16ReRecoA.txt containing these lines
 	/DoubleMu/Run2011A-16Jan2012-v1/AOD
 	/DoubleElectron/Run2011A-16Jan2012-v1/AOD
 
@@ -80,4 +80,8 @@ $ ./watch_grid.sh Submission_DATA_Jan16ReRecoA_7TeV_JanA_Jul1
    This will loop over the crab jobs and do crab -status -get in an efficient way. It then resubmits jobs that have failed. 
    This works most of the time, but every once in a while, due to bugs in CRAB, you might have to resubmit or forceResubmit 
    a few jobs by hand. This step cannot be parallelized perfectly.
+
+8. If for some reason you need to kill all the jobs in a Submission directory
+
+$ ./killall.sh Submission_DATA_Jan16ReRecoA_7TeV_JanA_Jul1
 

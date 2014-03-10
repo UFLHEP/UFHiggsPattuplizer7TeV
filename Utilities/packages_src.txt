@@ -23,3 +23,6 @@ CMSSW_4_4_X-B01 UserCode/UFL/PAT/UFHZZSkim UFHZZSkim
 
 
 #in DF/MuonReco you must change "isPFMuon()" to "userInt("pfMuId")"
+
+## For this to work you will need to have this in your .bash_profile
+## export CVSROOT=":ext:<username>@lxplus5.cern.ch:/afs/cern.ch/user/c/cvscmssw/public/CMSSW"
