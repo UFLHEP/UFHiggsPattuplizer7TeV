@@ -45,8 +45,23 @@ def installPackages():
 
         if len(f) == 2:
             cmd = 'cvs co -r '+f[0]+' '+f[1]
+            if os.path.isdir(f[1]):
+                print f[1],"already exists..."
+                continue
         if len(f) == 3:
-            cmd = 'cvs co -r '+f[0]+' -d '+f[2]+' '+f[1]
+            #cmd = 'cvs co -r '+f[0]+' -d '+f[2]+' '+f[1]
+            if os.path.isdir(f[2]):
+                print f[2],"already exists..."
+                continue
+            cmd = 'cvs co -r '+f[0]+' '+f[1]
+            status = processCmd(cmd)
+            cmd = 'mkdir -p '+f[2]
+            status = processCmd(cmd)
+            cmd = 'mv '+f[1]+'/* '+f[2]
+            status = processCmd(cmd)
+            cmd = 'rm -r UserCode'
+            
+
         processCmd(cmd)
 
     cmd = 'cvs update -r1.6 PhysicsTools/PatAlgos/plugins/PATPFParticleProducer.cc'
@@ -56,7 +71,7 @@ def installPackages():
     cmd = 'cvs update -r1.6 PhysicsTools/PatAlgos/plugins/PATCleaner.cc'
     processCmd(cmd)
 
-    cmd = 'cd EgammaAnalysis/ElectronTools/data; cat download.url | xargs wget; cd -;'
+    cmd = 'cd EgammaAnalysis/ElectronTools/data; cat download.url | xargs wget; cd -'
     processCmd(cmd)
 
     sys.exit()

@@ -19,8 +19,6 @@ V02-04-17      RecoJets/Configuration
 V04-01-00      RecoJets/JetAlgorithms                           
 V05-05-03      RecoJets/JetProducers   
 muscle_v4_2_0 UserCode/scasasso/MuScleFit/Calibration MuScleFit/Calibration
-CMSSW_4_4_X-B01 UserCode/UFL/PAT/UFHZZSkim UFHZZSkim
-
 
 #in DF/MuonReco you must change "isPFMuon()" to "userInt("pfMuId")"
 
