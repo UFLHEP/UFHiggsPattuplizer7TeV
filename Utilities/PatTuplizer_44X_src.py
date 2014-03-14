@@ -142,7 +142,7 @@ if not isMC:
 
 
 #Isolation
-from UFHZZSkim.CustomIso.addPatPfIso import * 
+from UFHiggsPattuplizer7TeV.CustomIso.addPatPfIso import * 
 #addMuonUserIsolation(process)
 #addElectronUserIsolation(process)
 startPFIso(process)
@@ -1097,7 +1097,7 @@ process.nEventsTriLep = cms.EDProducer("EventCountProducer")
 process.nEvents2l2nu = cms.EDProducer("EventCountProducer")
 process.nEvents2LSkim = cms.EDProducer("EventCountProducer")
 
-process.load('UFHZZSkim.FSRPhotons.fsrPhotons_cff')
+process.load('UFHiggsPattuplizer7TeV.FSRPhotons.fsrPhotons_cff')
 
 process.p_trilep = cms.Path(
     process.nEventsTotal
