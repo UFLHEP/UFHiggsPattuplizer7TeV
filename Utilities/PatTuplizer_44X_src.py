@@ -14,7 +14,7 @@ from PhysicsTools.PatAlgos.tools.pfTools import *
 ###################### Options #######################
 isMC = bool(True)
 
-isHorZZ = bool(False)
+isHorZZ = bool(True)
 
 isZSkim = bool(False)
 
